@@ -1,6 +1,6 @@
 
-#NAME : 
-#REF NO : 
+#NAME : SARAVANA KUMAR M
+#REF NO : 212222230133
 
 
 # Load the necessary packages
@@ -9,8 +9,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Read the Image and convert to grayscale
-
 #READ THE IMAGE USING IMREAD
+image_gray = cv2.imread("IMAGE2.webp", cv2.IMREAD_GRAYSCALE)
+
 #CONVERT THE COLOR FROM BGR TO RGB
 image_gray=cv2.imread("DUCK.jpg",0)
 
