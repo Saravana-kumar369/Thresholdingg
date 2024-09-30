@@ -35,12 +35,12 @@ thresh_dipt8=cv2.adaptiveThreshold(image_gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C
 
 titles=["Gray Image","Threshold Image (Binary)","Threshold Image (Binary Inverse)","Threshold Image (To Zero)"
        ,"Threshold Image (To Zero-Inverse)","Threshold Image (Truncate)","Otsu","Adaptive Threshold (Mean)","Adaptive Threshold (Gaussian)"]
-images=[image_gray,thresh_dipt1,...................,thresh_dipt8]#LIST OUT ALL TILL thresh_dipt8 i.e from thresh_dipt_1 till thresh_dipt_8a
+images = [image_gray, thresh_dipt1, thresh_dipt2, thresh_dipt3, thresh_dipt4, thresh_dipt5, thresh_dipt6, thresh_dipt7, thresh_dipt8]
 for i in range(0,9):
     plt.figure(figsize=(10,10))
     plt.subplot(1,2,1)
     plt.title("Original Image")
-    plt.imshow(image)
+     plt.imshow(image_gray, cmap='gray')
     plt.axis("off")
     plt.subplot(1,2,2)
     plt.title(titles[i])
